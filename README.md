@@ -17,7 +17,7 @@ Install this plugin in the same environment as Datasette.
 
 Once installed, Datasette will obey the `Accept-Encoding:` header sent by browsers or other user agents and return content compressed in the most appropriate way.
 
-This plugin is a thin wrapper for the [GzipMiddleware](https://www.starlette.io/middleware/#gzipmiddleware) provided by Starlette.
+This plugin is a thin wrapper for the [asgi-gzip library](https://github.com/simonw/asgi-gzip), which extracts the [GzipMiddleware](https://www.starlette.io/middleware/#gzipmiddleware) from Starlette.
 
 ## Development
 
