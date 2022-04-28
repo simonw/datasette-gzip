@@ -5,7 +5,7 @@ import pytest
 from datasette import hookimpl
 from datasette.app import Datasette
 from datasette.plugins import pm
-from starlette.middleware.gzip import GZipMiddleware
+from asgi_gzip import GZipMiddleware
 
 import datasette_gzip
 

@@ -32,7 +32,7 @@ setup(
     version=VERSION,
     packages=["datasette_gzip"],
     entry_points={"datasette": ["gzip = datasette_gzip"]},
-    install_requires=["datasette", "starlette"],
+    install_requires=["datasette", "asgi-gzip"],
     extras_require={"test": ["pytest", "pytest-asyncio"]},
     python_requires=">=3.7",
 )
