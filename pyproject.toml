@@ -1,0 +1,40 @@
+[project]
+name = "datasette-gzip"
+version = "0.2"
+description = "Add gzip compression to Datasette"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = "Apache-2.0"
+requires-python = ">=3.10"
+classifiers = [
+    "Framework :: Datasette",
+]
+dependencies = [
+    "datasette",
+    "asgi-gzip",
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/datasette-gzip"
+Issues = "https://github.com/simonw/datasette-gzip/issues"
+CI = "https://github.com/simonw/datasette-gzip/actions"
+Changelog = "https://github.com/simonw/datasette-gzip/releases"
+
+[project.entry-points.datasette]
+gzip = "datasette_gzip"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.12.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-root = ""
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
