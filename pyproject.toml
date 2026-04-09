@@ -11,7 +11,7 @@ classifiers = [
 ]
 dependencies = [
     "datasette",
-    "asgi-gzip",
+    "asgi-gzip>=0.3",
 ]
 
 [project.urls]
