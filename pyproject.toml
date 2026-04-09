@@ -1,6 +1,6 @@
 [project]
 name = "datasette-gzip"
-version = "0.2"
+version = "0.3"
 description = "Add gzip compression to Datasette"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
